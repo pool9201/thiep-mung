@@ -39,7 +39,7 @@
       body.style.filter = chance(.12)?`grayscale(${getRandomInt(0,80)}%)`:""
       let mode = pick(["daisies", "multi", "quad", "roses", "crosshatch", "blueYellow", "greenRed"])    
       let bg = new randomColor(minSat=50)
-      if(mode=="daisies") bg.l = getRandomInt(0,50)
+      if(mode=="daisies") bg.l = getRandomInt(1,50)
       canvas.style.backgroundColor = bg.hsl()
        
       //themes hsl=pistil color hsl2=petal color
